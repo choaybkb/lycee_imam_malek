@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: aliceblue;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 50px;
+}
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2); /* More transparent white */
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 100px;
+  padding: 10px 10px;
+  font-size: 8px;
+}
+.logo {
+  display: flex; /* لضبط محتوى الشعار في وسط العنصر */
+  align-items: center; /* لتوسيط الشعار عموديًا */
+  text-decoration: none;
+  color: deepskyblue;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5em; /* تقليل حجم النص قليلاً */
+  padding: 10px; /* إضافة بعض التباعد حول النص */
+}
+
+.logo img {
+  width: 40px; /* تقليل حجم الشعار */
+  height: auto; /* يحافظ على نسبة العرض إلى الارتفاع */
+  margin-right: 5px; /* إضافة بعض التباعد بين الشعار والنص */
+}
+
+.navigation a {
+  color: rgb(0, 0, 230);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.navigation a:hover {
+  color: purple;
+}
+section {
+  padding: 100px 80px;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(images/school-books-young-adult-education.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.main h3 {
+  color: black;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.main h3 span {
+  display: inline-block;
+  margin-top: 2px;
+  color: deepskyblue;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.main h4 {
+  color: black;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.main-btn {
+  color: black;
+  background-color: rgb(0, 162, 255);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.7375em 1.6875em;
+  letter-spacing: 0.5px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: 0.7s ease;
+}
+.main-btn:hover {
+  background-color: rgb(5, 99, 241);
+  transform: scale(1.1);
+}
+.social-icons a {
+  color: rgb(2, 61, 187);
+  font-size: 1.5em;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: deepskyblue;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: white;
+  width: 12.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+.icon {
+  color: rgb(17, 109, 247);
+  font-size: 1em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+.info h3 {
+  color: rgb(2, 133, 255);
+  font-size: 1em;
+  font-weight: 600;
+  margin: 10px;
+  text-decoration: none;
+}
+.info3 h3{
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+.info3 h3 :hover{
+  color:purple;
+}
+.projects {
+  background-color: #080816;
+}
+.projects .content {
+  margin-top: 20;
+}
+.project-card {
+  background-color: rgb(2, 133, 255);
+  border: 5px solid white;
+  min-height: 10em;
+  width: 15em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+.project-image img {
+  width: 100%;
+}
+.project-info {
+  padding: 1em;
+}
+.project-title {
+  display: flex;
+  color: rgba(0, 0, 0, 0.89);
+  font-size: 0.7em;
+  justify-content: space-between;
+  font-weight: 800;
+}
+.more-details {
+  text-decoration: none;
+  color: #080816;
+}
+.more-details:hover {
+  color: purple;
+}
+.contact{
+  background-color: rgb(2, 133, 255);;
+}
+.contact .icon {
+  font-size: 3;
+}
+.contact .info h3 {
+  color: #000;
+}
+.contact .info p {
+  font-size: 1em;
+}
+.footer {
+  align-items: center;
+  background-color: #080816;
+  color: white;
+  padding: 0.9em;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-title {
+  font-size: 1em;
+  font-weight: 500;
+}
+.footer-title span {
+  color: rgb(17, 109, 247);
+}
+.contact {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 2.2em;
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.icon {
+  font-size: 3em;
+  color: #4A90E2;
+  margin-bottom: 20px;
+}
+
+.info h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.info p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+.info p a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.info p a:hover {
+  text-decoration: underline;
+}
